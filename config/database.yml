@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: <%= ENV["DB_HOST"] %>
+  username: <%= ENV["POSTGRES_USER"] %>
+  password: <%= ENV["POSTGRES_PASSWORD"] %>
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+
+development:
+  <<: *default
+  database: gym_api_development
+
+test:
+  <<: *default
+  database: gym_api_test
+production:
+  <<: *default
+  database: gym_api_production
+  username: gym_api
+  password: <%= ENV["GYM_API_DATABASE_PASSWORD"] %>
