@@ -15,5 +15,4 @@ class ExerciseSerializer < ActiveModel::Serializer
   def video
     rails_blob_url(object.video_file, only_path: true) if object.video_file.attached?
   end
-
 end

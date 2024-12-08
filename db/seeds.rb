@@ -21,14 +21,14 @@ puts "Token for #{user.username}: #{token} generated!"
 
 puts "========= Generating Equipaments ========="
 
-equipaments = [ "Barbell", "Body weight", "Cable", 
-                "Dumbbell", "EZ Barbell", "Leverage machine", 
-                "Sled machine" ,"Smith machine", "Weighted", 
-                "Assisted", "Band", "Battling Rope", "Bosu ball", 
-                "Hammer", "Kettlebell", "Medicine Ball", "Olympic barbell", 
-                "Power Sled", "Resistance Band", "Roll", "Rollball", "Rope", 
-                "Stability ball", "Stick", "Suspension", "Trap bar", 
-                "Vibrate Plate", "Wheel roller" 
+equipaments = [ "Barbell", "Body weight", "Cable",
+                "Dumbbell", "EZ Barbell", "Leverage machine",
+                "Sled machine", "Smith machine", "Weighted",
+                "Assisted", "Band", "Battling Rope", "Bosu ball",
+                "Hammer", "Kettlebell", "Medicine Ball", "Olympic barbell",
+                "Power Sled", "Resistance Band", "Roll", "Rollball", "Rope",
+                "Stability ball", "Stick", "Suspension", "Trap bar",
+                "Vibrate Plate", "Wheel roller"
               ]
 
 equipaments.each do |equipament|
@@ -41,11 +41,11 @@ puts "========= successful ========="
 
 puts "========= Generating BodyParts ========="
 
-body_parts = [  "Thighs", "Chest", "Hips", "Back", 
-                "Upper Arms", "Shoulders", "Forearms", 
-                "Calves", "Neck", "Cardio", "Full body", 
-                "Waist", "Plyometrics", "Weightlifting", 
-                "Yoga", "Stretching", "Biceps", "Triceps", 
+body_parts = [  "Thighs", "Chest", "Hips", "Back",
+                "Upper Arms", "Shoulders", "Forearms",
+                "Calves", "Neck", "Cardio", "Full body",
+                "Waist", "Plyometrics", "Weightlifting",
+                "Yoga", "Stretching", "Biceps", "Triceps",
                 "Quadriceps", "Hamstrings"
               ]
 

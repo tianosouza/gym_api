@@ -25,8 +25,8 @@ class Exercise < ApplicationRecord
   end
 
   def rename(file)
-    file_rename = file.gsub(/\d+/, ' ').gsub('_', ' ').gsub('-', ' ').strip
-    file_rename.split.map(&:capitalize).join(' ')
+    file_rename = file.gsub(/\d+/, " ").gsub("_", " ").gsub("-", " ").strip
+    file_rename.split.map(&:capitalize).join(" ")
   end
 
   def rename_attached_files

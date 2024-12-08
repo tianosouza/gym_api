@@ -4,7 +4,7 @@ Rails.application.routes.draw do
     resources :exercises, only: [ :new, :index, :edit, :update, :show, :destroy, :create ]
     resources :workouts
   end
-  
+
   resources :users, only: [ :create, :index ]
   get "/sign_in", to: "users#sign_in"
   post "/sign_in", to: "users#sign_in"

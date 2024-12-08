@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :ensure_json_request, except: [:sign_in]
+  before_action :ensure_json_request, except: [ :sign_in ]
   before_action :authorize, only: [ :index ]
 
   def index
@@ -27,9 +27,9 @@ class UsersController < ApplicationController
         end
         return
       end
-  
+
       @user = User.find_by(username: params[:username])
-  
+
       if @user.nil?
         respond_to do |format|
           format.html { flash.now[:alert] = "Username not found"; render :sign_in, status: :unprocessable_entity }
@@ -37,7 +37,7 @@ class UsersController < ApplicationController
         end
         return
       end
-  
+
       if @user.authenticate(params[:password])
         token = encode_token(user_id: @user.id)
         respond_to do |format|
@@ -54,7 +54,7 @@ class UsersController < ApplicationController
       render :sign_in
     end
   end
-  
+
 
   def destroy
     unless is_admin?

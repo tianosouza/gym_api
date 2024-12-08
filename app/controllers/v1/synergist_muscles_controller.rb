@@ -1,6 +1,6 @@
 module V1
   class SynergistMusclesController < ApplicationController
-    before_action :set_synergist_muscle, only: [:show, :update, :destroy]
+    before_action :set_synergist_muscle, only: [ :show, :update, :destroy ]
 
     # GET /synergist_muscles
     def index

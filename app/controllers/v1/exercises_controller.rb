@@ -5,7 +5,7 @@ module V1
 
     def index
       Rails.logger.info "Fetching all exercises"
-      #debugger
+      # debugger
       @exercises = Exercise.all.limit(10)
       respond_to do |format|
         format.html # renderiza index.html.erb

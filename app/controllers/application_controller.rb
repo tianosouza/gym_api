@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
-  before_action :ensure_json_request#, except: [:new, :create, :edit, :update, :show, :index]
-  #before_action :authorize
+  before_action :ensure_json_request# , except: [:new, :create, :edit, :update, :show, :index]
+  # before_action :authorize
 
   JWT_SECRET = ENV["JWT_SECRET_KEY"] || "default_secret"
 
