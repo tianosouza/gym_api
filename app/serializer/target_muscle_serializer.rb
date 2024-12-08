@@ -1,5 +1,3 @@
-class BodyPartSerializer < ActiveModel::Serializer
-  attributes :name
-
-  has_many :exercises
+class TargetMuscleSerializer < ActiveModel::Serializer
+  attributes :id, :name
 end
