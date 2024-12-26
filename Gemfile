@@ -15,7 +15,7 @@ gem "bootsnap", require: false
 gem "bootstrap", "~> 5.3", ">= 5.3.3"
 gem "sassc-rails", "~> 2.1", ">= 2.1.2"
 gem "rack-cors", "~> 2.0"
-gem "jwt", "~> 2.9"
+gem "jwt", "~> 2.10"
 gem "active_model_serializers", "~> 0.10.14"
 
 group :development, :test do
